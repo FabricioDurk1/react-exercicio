@@ -1,0 +1,66 @@
+// meu-componente.scss
+$cor-primaria: #0000ff;
+$cor-clara: #add8e6;
+
+:root {
+    --page-background: #152266;
+    --input-border: #99E2F2;
+    --input-background: #99a8fd;
+    --button-color: #1F53E5;
+}
+
+input {
+    width: 12rem;
+    margin: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    font-size: 4rem;
+}
+
+
+button {    
+    display: block;
+    margin: auto;
+    padding: .5rem 2rem;
+    border-radius: 0px 10px 0 10px;
+    border-style: none;
+    color: white;
+    background-color: blue;
+    font-size: 2rem;
+}
+
+.meu-componente {
+  background-color: $cor-primaria;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__campo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__botao {
+    background-color: $cor-clara;
+    color: $cor-primaria;
+  }
+
+  &__resultado {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+ 
+}
+
